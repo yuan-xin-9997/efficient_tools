@@ -15,7 +15,6 @@ class ZMailObject(object):
         self.server = zmail.server(self.username, self.authorization_code)
 
     def send_email(self, mail_body, mail_to_list):
-        print(datetime.datetime.now() + " - email is sending")
-        for rec in mail_to_list:
-            self.server.send_mail(rec, mail_body)
-        print(datetime.datetime.now() + " - email is sent!")
+        print(str(datetime.datetime.now()) + " - email is sending")
+        self.server.send_mail(mail_to_list, mail_body)
+        print(str(datetime.datetime.now()) + " - email is sent!")
