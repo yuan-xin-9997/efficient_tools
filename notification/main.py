@@ -1,6 +1,6 @@
 # encoding: utf-8
 import datetime
-from notification.ZMailUtil import ZMailObject
+from ZMailUtil import ZMailObject
 
 print("-" * 50)
 print(str(datetime.datetime.now()) + " - 程序开始运行...")

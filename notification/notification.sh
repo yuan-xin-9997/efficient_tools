@@ -10,5 +10,5 @@
 sudo ntpdate ntp.aliyun.com
 dos2unix /home/atguigu/crontab/notification/*.py
 chmod +x /home/atguigu/crontab/notification/*.py
-python3 ./main.py > notification.log 2>&1
+python3 ./main.py >> notification.log 2>&1
 sudo ntpdate ntp.aliyun.com
